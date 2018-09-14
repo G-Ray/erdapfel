@@ -31,6 +31,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-Geoloc:before {
+  content: "\e90d";
+  color: #5c6f84;
+}
 .icon-chevron-left:before {
   content: "\e913";
 }
@@ -40,11 +45,29 @@
 .icon-chevrons-right:before {
   content: "\e911";
 }
+.icon-facebook:before {
+  content: "\e912";
+}
+.icon-minus:before {
+  content: "\e919";
+}
+.icon-more-horizontal:before {
+  content: "\e916";
+}
+.icon-plus:before {
+  content: "\e91a";
+}
+.icon-share-2:before {
+  content: "\e917";
+}
+.icon-trash:before {
+  content: "\e918";
+}
+.icon-twitter:before {
+  content: "\e915";
+}
 .icon-x:before {
   content: "\e910";
-}
-.icon-location:before {
-  content: "\e947";
 }
 .icon-icon_chevron-down:before {
   content: "\e900";
@@ -85,12 +108,6 @@
 .icon-icon_info:before {
   content: "\e90c";
 }
-.icon-icon_minus:before {
-  content: "\e90d";
-}
 .icon-icon_phone:before {
   content: "\e90e";
-}
-.icon-icon_plus:before {
-  content: "\e90f";
 }

@@ -2,8 +2,8 @@ import PinPoint from './pin_point'
 export default class ExtendedControl {
   constructor() {
     this._container = document.createElement('div')
-    this._zoomInButton = this._createButton('mapboxgl-ctrl-icon icon-icon_plus', 'Zoom In', () => this._map.zoomIn())
-    this._zoomOutButton = this._createButton('mapboxgl-ctrl-icon icon-icon_minus', 'Zoom Out', () => this._map.zoomOut())
+    this._zoomInButton = this._createButton('icon-plus', 'Zoom In', () => this._map.zoomIn())
+    this._zoomOutButton = this._createButton('icon-minus', 'Zoom Out', () => this._map.zoomOut())
     this._compass = this._createButton('mapboxgl-ctrl-icon mapboxgl-ctrl-compass', 'Reset North', () => {
       this._resetNorthAndTilt()
     })
@@ -11,7 +11,7 @@ export default class ExtendedControl {
     this._compassArrow.setAttribute('class', 'mapboxgl-ctrl-compass-arrow')
     this._compass.appendChild(this._compassArrow)
 
-    this._center = this._createButton('mapboxgl-ctrl-icon mapboxgl-ctrl-geolocate', 'Geolocate', () => {
+    this._center = this._createButton('mapboxgl-ctrl-icon mapbox-control-external icon-Geoloc', 'Geolocate', () => {
       this._geolocate()
     })
 

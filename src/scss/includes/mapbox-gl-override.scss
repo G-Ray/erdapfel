@@ -2,3 +2,7 @@
 .mapboxgl-ctrl-top-right,
 .mapboxgl-ctrl-bottom-left,
 .mapboxgl-ctrl-bottom-right  { position:absolute; pointer-events:none; }
+
+.mapbox-control-external {
+  font-size: 18px;
+}
