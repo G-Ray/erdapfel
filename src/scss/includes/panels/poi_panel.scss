@@ -7,7 +7,7 @@ $BLOCK_INDENT: 60px;
   width: $panel_width;
   padding-bottom: 10px;
   box-shadow: 0 0 4px 0 rgba(0,0,0,.15);
-  background: #fff;
+  background: $background;
   border-radius: 3px;
   overflow-y: auto;
 }
@@ -41,15 +41,15 @@ $BLOCK_INDENT: 60px;
 
 .poi_panel__back_to_favorite {
   font-size: 14px;
-  color: #777;
+  color: $secondary_text;
   padding: 14px 0 14px 40px;
   cursor: pointer;
-  border-bottom: 1px solid #f4f6fa;
+  border-bottom: 1px solid $separator_color;
   margin-bottom: 14px;
 }
 
 .poi_panel__back_to_favorite:hover {
-  color: #333537;
+  color: $secondary_text;
 }
 
 .poi_panel__description_container {
@@ -67,12 +67,12 @@ $BLOCK_INDENT: 60px;
   width: 350px;
   padding: 18px 0 0 $BLOCK_INDENT;
   font-weight: bold;
-  color: $text_color;
+  color: $primary_text;
   font-size: 15px;
 }
 
 .poi_panel__info__section__title {
-  color: $text_alt_color;
+  color: $secondary_text;
   font-weight: normal;
   margin: 20px 0 0 20px;
 }
@@ -83,7 +83,7 @@ $BLOCK_INDENT: 60px;
   width: 338px;
   height: 1px;
   margin-top: 8px;
-  background: #e4e7ef;
+  background: $separator_color;
   margin-left: 28px;
 }
 
@@ -91,7 +91,7 @@ $BLOCK_INDENT: 60px;
   position: relative;
   padding-left: $BLOCK_INDENT;
   font-size: 14px;
-  color: #5c6f84;
+  color: $secondary_text;
 
 }
 .poi_panel__description:first-letter {
@@ -101,7 +101,7 @@ $BLOCK_INDENT: 60px;
 .poi_panel__address {
   padding: 8px 0 0 $BLOCK_INDENT;
   font-size: 16px;
-  color: #353c52;
+  color: $primary_text;
 }
 
 .poi_panel__info__section__description  {
@@ -111,12 +111,12 @@ $BLOCK_INDENT: 60px;
 .poi_panel__info__link {
   margin-left: $BLOCK_INDENT;
   font-size: 15px;
-  color: #0c897b;
+  color: $secondary_variant_text;
 }
 
 .poi_panel__info__link:HOVER {
   text-decoration: none;
-  border-bottom: 1px solid #0c897b;
+  border-bottom: 1px solid $secondary_variant_text;
 }
 
 .poi_panel__info__accessibilities {
@@ -169,7 +169,7 @@ $BLOCK_INDENT: 60px;
 
 .hour_panel__no_data  {
   padding-left: 64px;
-  color: #777;
+  color: $secondary_text;
   font-size: 14px;
 }
 
@@ -220,7 +220,7 @@ $BLOCK_INDENT: 60px;
   display: inline-block;
   height: 25px;
   font-size: 22px;
-  color: #5c6f84;
+  color: $secondary_text;
   vertical-align: middle;
 }
 
@@ -229,7 +229,7 @@ $BLOCK_INDENT: 60px;
   padding-left: 2px;
   height: 25px;
   font-size: 12px;
-  color: #5c6f84;
+  color: $secondary_text;
 }
 
 .poi_panel__description_container {
@@ -256,7 +256,7 @@ $BLOCK_INDENT: 60px;
   top: 18px;
   left: 25px;
   font-size: 24px;
-  color: #a7a7a7;
+  color: $primary_clear;
   width: 20px;
   height: 18px;
 }
@@ -299,7 +299,7 @@ $BLOCK_INDENT: 60px;
   font-size: 13px;
   font-weight: normal;
   margin: 10px 0 4px $BLOCK_INDENT;
-  color: #707070
+  color: $secondary_text
 }
 
 .poi_panel__sub_block__title {
@@ -307,7 +307,7 @@ $BLOCK_INDENT: 60px;
   margin: 20px 0 0 $BLOCK_INDENT;
   overflow: hidden;
   font-size: 14px;
-  color: #707070;
+  color: $secondary_text;
   font-weight: bold;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -316,7 +316,7 @@ $BLOCK_INDENT: 60px;
 .poi_panel__info__wiki {
   margin: 10px 0 0 $BLOCK_INDENT;
   font-size: 12px;
-  color: #222;
+  color: $secondary_text;
 }
 
 .poi_panel__info__wiki__link {

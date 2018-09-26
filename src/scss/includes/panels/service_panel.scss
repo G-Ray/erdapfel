@@ -10,7 +10,7 @@
 }
 
 .service_panel__title {
-  color: #353c52;
+  color: $primary_text;
   font-size: 14px;
   font-weight: normal;
   border-bottom: 1px solid #e0e1e6;
@@ -19,7 +19,7 @@
 }
 
 .side_bar__item__icon {
-  color: #5c6f84;
+  color: $secondary_text;
 }
 
 .service_panel__item {
@@ -31,7 +31,7 @@
   cursor: pointer;
   font-size: 13px;
   font-weight: normal;
-  color: #5c6f84;
+  color: $secondary_text;
 }
 
 @media (max-width: 640px) {
