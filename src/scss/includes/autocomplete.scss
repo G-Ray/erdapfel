@@ -37,7 +37,7 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 44px;
   right: 30px;
   top: 12px;
-  background: $background_active url(/statics/images/not-active.svg) center no-repeat;
+  background: $background url(/statics/images/not-active.svg) center no-repeat;
   background-size: 20px 20px;
   font-size: 14px;
   color: $primary_text;
