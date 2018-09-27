@@ -167,6 +167,11 @@ $BLOCK_INDENT: 60px;
   font-weight: bold;
 }
 
+.poi_panel__hour__extend {
+  position: absolute;
+  right: 20px;
+}
+
 .hour_panel__no_data  {
   padding-left: 64px;
   color: $secondary_text;
