@@ -5,7 +5,7 @@
 
 .search_form__input {
   background: #fff;
-  width: 382px;
+  width: 400px;
   height: 68px;
   padding: 8px 60px 10px 70px;
   border: none;
@@ -14,6 +14,7 @@
   font-weight: normal;
   color: $primary_text;
   border-radius: 34px;
+  @include card_shadow();
 }
 
 /* Disable Chrome custom 'cancel' button */

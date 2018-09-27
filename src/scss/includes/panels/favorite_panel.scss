@@ -1,11 +1,11 @@
 .favorites_panel {
   display: block;
   position: relative;
-  max-height: calc(100vh - 232px);
+  max-height: calc(100vh - 240px);
   width: $panel_width;
   background: $background;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,.15);
-  border-radius: 3px;
+  @include card_shadow();
+  @include card_radius();
   overflow-y: auto;
 }
 
@@ -54,7 +54,7 @@
   border-radius: 50%;
   text-align: center;
   line-height: 30px;
-  transition: color .3s, background-color .3s;
+  color: $primary_clear;
 }
 
 .favorite_panel__item__more_button:hover {
@@ -147,7 +147,8 @@
   content: '';
   clear: both;
   height: 1px;
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
   background-color: $separator_color;
 }
 
@@ -157,8 +158,15 @@
   padding-left: 0;
 }
 
+.favorite_panel__item__more_container:hover .favorite_panel__item__more_button {
+  color : $primary_text;
+}
+
+.favorite_panel__item__more_container:hover .favorite_panel__item__more_button:hover {
+  color : $primary_alternative_text;
+}
+
 .favorite_panel__filter {
-  transition: background-color, color .2s;
   float: right;
   margin: -30px 40px 0 0;
   font-size: 14px;

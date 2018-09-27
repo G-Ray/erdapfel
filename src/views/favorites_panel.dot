@@ -20,9 +20,8 @@
     {{= this.filterPanel.render() }}
       <div class="favorite_panel__item">
         {{~ this.favoritePois:poi:i }}
-          <div class="favorite_panel__item__more_container">
+          <div class="favorite_panel__item__more_container" {{= click(this.go, this, poi) }} id="{{= `favorite_item_${i}` }}">
 
-            <div class="favorite_panel__swipe_element" {{= click(this.go, this, poi) }} id="{{= `favorite_item_${i}` }}">
 
               <div class="favorite_panel__item__more_button" {{= click(this.toggleMore, this, i) }}>
                 <i class="icon-more-horizontal"></i>
@@ -42,7 +41,6 @@
                 <p class="favorite_panel__item__desc">
                   {{= poi.subClassName ? this.poiSubClass(poi.subClassName) : '' }}
                 </p>
-              </div>
             </div>
               <div class="favorite_panel__item__more" id="favorite_more_{{= i }}">
                 <p class="favorite_panel__item__more__line" {{= click(this.openShare, this, poi) }}>

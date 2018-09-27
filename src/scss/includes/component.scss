@@ -17,7 +17,7 @@ $background_alternate: #039BE5;
 $surface : #f4f6fa;
 
 /* separator */
-$separator_color : #f3f3f3;
+$separator_color : #e0e1e6;
 
 /* error  */
 $error_background : #f8d7da;
@@ -30,5 +30,5 @@ $error_text : #721c24;
 }
 
 @mixin card_shadow() {
-  box-shadow: rgba(0, 0, 0, 0.52) 1px 1px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 6px;
 }

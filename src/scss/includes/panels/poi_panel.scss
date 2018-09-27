@@ -2,13 +2,13 @@ $BLOCK_INDENT: 60px;
 
 .poi_panel {
   display: block;
-  max-height: calc(100vh - 232px);
+  max-height: calc(100vh - 240px);
   position: relative;
   width: $panel_width;
   padding-bottom: 10px;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,.15);
   background: $background;
-  border-radius: 3px;
+  @include card_shadow();
+  @include card_radius();
   overflow-y: auto;
 }
 

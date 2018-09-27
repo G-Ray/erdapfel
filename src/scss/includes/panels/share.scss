@@ -88,3 +88,12 @@ width: 100%;
   font-size: 22px;
   padding-right: 6px;
 }
+
+.share__copy_status {
+  color: $secondary_text;
+  transition: color .2s;
+}
+
+.share__copy_status--hidden {
+  color: transparent;
+}
