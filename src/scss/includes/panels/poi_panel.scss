@@ -133,7 +133,7 @@ $BLOCK_INDENT: 60px;
 }
 
 .poi_panel__info__hours__table {
-  width: 330px;
+  width: calc(100% - 20px);
   margin-top: 8px;
   font-size: 15px;
 }
@@ -167,6 +167,11 @@ $BLOCK_INDENT: 60px;
   right: 0;
   font-size: 24px;
   color: $secondary_text;
+  transition: transform .2s;
+}
+
+.poi_panel__info__hours__status__toggle--reversed {
+  transform: rotate(180deg);
 }
 
 .poi_panel__info__hours .day {

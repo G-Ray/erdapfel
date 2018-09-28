@@ -14,12 +14,10 @@ function HourPanel(block, poi, options) {
 HourPanel.prototype.extend = function() {
   this.panel.toggleClassName(.3, '.poi_panel__info__hours', 'poi_panel__info__hours--open')
   if(this.isCollapsed) {
-    this.panel.removeClassName(.3, '.poi_panel__info__hours__status__toggle', '.icon-icon_chevron-down')
-    this.panel.addClassName(.3, '.poi_panel__info__hours__status__toggle', '.icon-icon_chevron-up')
+    this.panel.addClassName(.3, '.poi_panel__info__hours__status__toggle', 'poi_panel__info__hours__status__toggle--reversed')
     this.isCollapsed = false
   } else {
-    this.panel.removeClassName(.3, '.poi_panel__info__hours__status__toggle', '.icon-icon_chevron-up')
-    this.panel.addClassName(.3, '.poi_panel__info__hours__status__toggle', '.icon-icon_chevron-down')
+    this.panel.removeClassName(.3, '.poi_panel__info__hours__status__toggle', 'poi_panel__info__hours__status__toggle--reversed')
     this.isCollapsed = true
   }
 }
