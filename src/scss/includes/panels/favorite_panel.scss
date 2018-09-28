@@ -257,7 +257,7 @@ INPUT[type=checkbox]:checked + .filter_panel__label {
   }
 
   .favorite_panel__item {
-    width: calc(100vw - 40px);
-    margin-left: 20px;
+    width: calc(100% - 40px);
+    margin:0 20px;
   }
 }
