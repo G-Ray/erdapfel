@@ -222,6 +222,17 @@ INPUT[type=checkbox]:checked + .filter_panel__label {
     max-height: calc(100vh - 200px);
     width: 100vw;
     transition: top .2s;
+    background: $surface;
+  }
+
+  .favorite_panel__item__more_container {
+    background: $background;
+    margin:8px 0;
+    @include card_shadow();
+  }
+
+  .favorite_panel__item__more_container:not(:last-child):after {
+    display: none;
   }
 
   .favorites_panel--hidden {
