@@ -122,6 +122,7 @@ $BLOCK_INDENT: 60px;
 .poi_panel__info__accessibilities {
   font-size: 15px;
   margin-left: $BLOCK_INDENT;
+  color: $primary_text;
 }
 
 .poi_panel__info__hours {
@@ -151,8 +152,21 @@ $BLOCK_INDENT: 60px;
 }
 
 .poi_panel__info__hours__status {
-  padding-left: $BLOCK_INDENT;
   cursor: pointer;
+  position: relative;
+  width: 368px;
+}
+
+.poi_panel__info__hours__status__text {
+  color: $primary_text;
+  padding-left: $BLOCK_INDENT;
+}
+
+.poi_panel__info__hours__status__toggle {
+  position: absolute;
+  right: 0;
+  font-size: 24px;
+  color: $secondary_text;
 }
 
 .poi_panel__info__hours .day {
@@ -196,6 +210,7 @@ $BLOCK_INDENT: 60px;
 .poi_panel__info__item {
   margin-left: $BLOCK_INDENT;
   font-size: 13px;
+  color: $primary_text;
 }
 
 .poi_panel__info__item--beer {
@@ -289,10 +304,12 @@ $BLOCK_INDENT: 60px;
 
 .poi_panel__block__collapse {
   position: absolute;
-  right: 34px;
-  top: -16px;
+  top: 0;
+  right: 0;
   cursor: pointer;
   transition: transform .2s;
+  font-size: 24px;
+  color: $secondary_text;
 }
 
 .poi_panel__block__collapse--reversed {
@@ -308,14 +325,21 @@ $BLOCK_INDENT: 60px;
 }
 
 .poi_panel__sub_block__title {
+  margin-top:20px;
+  cursor: pointer;
+  position: relative;
+  width: 366px;
+}
+
+.poi_panel__sub_block__title__text {
   width: 285px;
-  margin: 20px 0 0 $BLOCK_INDENT;
-  overflow: hidden;
   font-size: 14px;
   color: $secondary_text;
   font-weight: bold;
-  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: $BLOCK_INDENT;
 }
 
 .poi_panel__info__wiki {
@@ -342,6 +366,9 @@ $BLOCK_INDENT: 60px;
     width: 100vw;
   }
 
+  .poi_panel__info__hours__status {
+    width: calc(100% - 16px);
+  }
 
   .poi_panel__toggle_display--mobile {
     display: block;
@@ -354,6 +381,10 @@ $BLOCK_INDENT: 60px;
   .poi_panel__toggle_display {
     top: 75px;
     right: 10px
+  }
+
+  .poi_panel__sub_block__title {
+    width: calc(100% - 16px);
   }
 
   .poi_panel__title {

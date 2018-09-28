@@ -8,10 +8,20 @@ function HourPanel(block, poi, options) {
   this.title = options.title
   this.opening = new OsmSchedule(block, options.messages)
   this.latLng = poi.latLon
+  this.isCollapsed = true
 }
 
 HourPanel.prototype.extend = function() {
   this.panel.toggleClassName(.3, '.poi_panel__info__hours', 'poi_panel__info__hours--open')
+  if(this.isCollapsed) {
+    this.panel.removeClassName(.3, '.poi_panel__info__hours__status__toggle', '.icon-icon_chevron-down')
+    this.panel.addClassName(.3, '.poi_panel__info__hours__status__toggle', '.icon-icon_chevron-up')
+    this.isCollapsed = false
+  } else {
+    this.panel.removeClassName(.3, '.poi_panel__info__hours__status__toggle', '.icon-icon_chevron-up')
+    this.panel.addClassName(.3, '.poi_panel__info__hours__status__toggle', '.icon-icon_chevron-down')
+    this.isCollapsed = true
+  }
 }
 
 export default HourPanel
