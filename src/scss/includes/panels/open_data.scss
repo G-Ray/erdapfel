@@ -18,6 +18,8 @@
   color: $secondary_text;
 }
 
-@media (max-width: 640px) {
-  display: none;
+@media (max-width: 850px) {
+  .open_data {
+    display: none;
+  }
 }
