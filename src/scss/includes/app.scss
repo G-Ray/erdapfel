@@ -10,7 +10,7 @@ BODY {
 
 .favorite_poi_panel__container {
   position: relative;
-  max-height: calc(100vh - 232px);
+  max-height: calc(100vh - 75px);
 }
 
 @keyframes appear {
@@ -86,12 +86,15 @@ BODY {
 
 @media (max-width: 640px) {
   .side_panel__container {
-    top:75px;
+    top:auto;
+    bottom:0;
     left: 0;
+    max-height: calc(100vh - 75px);
+    width: 100vw;
   }
 
   .favorite_poi_panel__container {
     position: relative;
-    max-height: calc(100vh - 200px);
+    max-height: calc(100vh - 100px);
   }
 }

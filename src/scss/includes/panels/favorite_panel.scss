@@ -1,12 +1,17 @@
 .favorites_panel {
   display: block;
   position: relative;
-  max-height: calc(100vh - 240px);
   width: $panel_width;
   background: $background;
   @include card_shadow();
   @include card_radius();
+
+  overflow: hidden;
+}
+
+.favorites_panel__scroll {
   overflow-y: auto;
+  max-height: calc(100vh - 240px);
 }
 
 .favorites_panel--hidden {
@@ -219,9 +224,9 @@ INPUT[type=checkbox]:checked + .filter_panel__label {
 @media (max-width: 640px) {
   .favorites_panel {
     position: relative;
-    max-height: calc(100vh - 200px);
+    max-height: calc(100vh - 75px);
     width: 100vw;
-    transition: top .2s;
+    transition: top 1s;
     background: $surface;
   }
 

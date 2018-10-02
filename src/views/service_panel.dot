@@ -27,3 +27,11 @@
   </div>
 
 </div>
+
+<div class="service_panel_mobile">
+
+  <button class="service_panel_mobile__favorite" {{= click(this.toggleFavorite, this) }}>
+    <i class="icon-icon_star"></i>
+  </button>
+
+</div>
