@@ -5,11 +5,18 @@
   background: $background;
   @include card_shadow();
   @include card_radius();
-
   overflow: hidden;
 }
 
+.favorite_panel__handle {
+  background: #7c95ba;
+  height:30px;
+  width:100%;
+  display: none;
+}
+
 .favorites_panel__scroll {
+  position: relative;
   overflow-y: auto;
   max-height: calc(100vh - 240px);
 }
@@ -228,6 +235,10 @@ INPUT[type=checkbox]:checked + .filter_panel__label {
     width: 100vw;
     transition: top 1s;
     background: $surface;
+  }
+
+  .favorite_panel__handle {
+    display: block;
   }
 
   .favorite_panel__item__more_container {
