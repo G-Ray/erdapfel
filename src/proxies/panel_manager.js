@@ -89,13 +89,13 @@ PanelManager.register = function(panel) {
 PanelManager.initLoad = function () {
   document.querySelectorAll('.loading_panel').forEach((loadingPanel) => {
     loadingPanel.style.display = 'block'
-    loadingPanel.style.animationName = 'appear'
+    loadingPanel.style.animation = 'appear 0s forwards'
   })
 }
 
 PanelManager.endLoad = function () {
   document.querySelectorAll('.loading_panel').forEach((loadingPanel) => {
-    loadingPanel.style.animationName = 'disappear'
+    loadingPanel.style.animation = 'disappear 1s forwards'
   })
   setTimeout(() => {
     document.querySelectorAll('.loading_panel').forEach((loadingPanel) => {
