@@ -34,12 +34,17 @@
   color: $secondary_text;
 }
 
+.service_panel_mobile {
+  display: none;
+}
+
 @media (max-width: 640px) {
   .service_panel {
     display: none;
   }
 
   .service_panel_mobile {
+    display: block;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -53,6 +58,7 @@
     left: 8px;
     background: #fff;
     border-radius: 50%;
+    @include card_shadow();
   }
 }
 

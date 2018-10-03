@@ -1,19 +1,19 @@
 export default class Slide {
-  constructor(panel, touchHandleId, panelHandleId, options = {}) {
+  constructor(panel, touchHandleSelector, panelHandleSelector, options = {}) {
     this.options = options
     this.panel = panel
     this.speed = 0
     this.pos = 0
-    this.panelHandleId = panelHandleId
-    this.touchHandleId = touchHandleId
+    this.touchHandleSelector = touchHandleSelector
+    this.panelHandleSelector = panelHandleSelector
 
     this.bounds = options.bounds || {top : 0, bottom : 0}
     this.multiplier = options.multiplier || 1
   }
 
   initListeners() {
-    this.touchHandle = document.getElementById(this.touchHandleId)
-    this.panelHandle = document.querySelector(`[data-cid="${this.panelHandleId}"]`)
+    this.touchHandle = document.querySelector(this.touchHandleSelector)
+    this.panelHandle = document.querySelector(this.panelHandleSelector)
     this.move = false
     this.touchHandle.ontouchstart= (e) => {
       this.slideStart(e)

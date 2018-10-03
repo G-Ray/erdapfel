@@ -230,7 +230,8 @@ INPUT[type=checkbox]:checked + .filter_panel__label {
 
 @media (max-width: 640px) {
   .favorites_panel {
-    position: relative;
+    bottom: 0;
+    position: absolute;
     max-height: calc(100vh - 75px);
     width: 100vw;
     transition: top 1s;

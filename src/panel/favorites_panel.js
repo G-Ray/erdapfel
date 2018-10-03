@@ -32,7 +32,7 @@ function Favorite(sharePanel) {
   this.panel = new Panel(this, FavoritePanelView)
   this.isFavoritePanel = true
   PanelManager.register(this)
-  this.slide = new Slide(this, 'favorite-panel-handle', this.panel.cid, {bounds : {top : 0, bottom : 30}})
+  this.slide = new Slide(this, '#favorite-panel-handle', '.favorites_panel', {bounds : {top : 0, bottom : 30}})
 }
 
 Favorite.prototype.toggleMore = function (position) {

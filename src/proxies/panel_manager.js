@@ -87,15 +87,21 @@ PanelManager.register = function(panel) {
 }
 
 PanelManager.initLoad = function () {
-  document.getElementById('loading_panel').style.display = 'block'
-  document.getElementById('loading_panel').style.animationName = 'appear'
+  document.querySelectorAll('.loading_panel').forEach((loadingPanel) => {
+    loadingPanel.style.display = 'block'
+    loadingPanel.style.animationName = 'appear'
+  })
 }
 
 PanelManager.endLoad = function () {
-  document.getElementById('loading_panel').style.animationName = 'disappear'
+  document.querySelectorAll('.loading_panel').forEach((loadingPanel) => {
+    loadingPanel.style.animationName = 'disappear'
+  })
   setTimeout(() => {
-    document.getElementById('loading_panel').style.display = 'none'
-  }, 200)
+    document.querySelectorAll('.loading_panel').forEach((loadingPanel) => {
+      loadingPanel.style.display = 'none'
+    })
+  }, 1000)
 }
 
 export default PanelManager
